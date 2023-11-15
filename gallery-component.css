@@ -1,0 +1,57 @@
+body {
+    background-color: black;
+  }
+  
+  section {
+    display: flex;
+    width: 600px;
+    height: 430px;
+    margin: 20vh auto;
+  }
+  
+  section img {
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition: .5s ease;
+  }
+  
+  section img:hover {
+    cursor: crosshair;
+    width: 300px;
+    opacity: 1;
+    filter: contrast(120%);
+  }
+  
+  .image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 430px;
+  }
+  
+  .button-previous,
+  .button-next {
+    width: 100px;
+    height: 50px;
+    background-color: #fff;
+    border-radius: 5px;
+    border: 1px solid #000;
+    cursor: pointer;
+  }
+  
+  .button-previous {
+    float: left;
+  }
+  
+  .button-next {
+    float: right;
+  }
+  
+  .thumbnail {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    border-radius: 5px;
+  }
